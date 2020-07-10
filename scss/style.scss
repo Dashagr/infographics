@@ -50,13 +50,15 @@ header {
   }
 }
 
-@keyframes loading{
-50%{
+@keyframes loading {
+  50% {
     transform: rotateY(90deg);
-}
-0%, 100%{
+  }
+
+  0%,
+  100% {
     transform: rotateY(0deg);
-}
+  }
 }
 
 .triangle {
@@ -92,7 +94,7 @@ header {
       }
 
       p {
-        display: inline;
+        // display: inline;
         width: min-content;
       }
     }
@@ -134,6 +136,7 @@ header {
         background-size: 5em;
         background-position-y: 5.5em;
       }
+
       .trapezoid__name {
         right: calc(50vw + (-4em));
       }
@@ -148,6 +151,7 @@ header {
         background-position: center 1.5em;
         background-size: 13em;
       }
+
       .trapezoid__name {
         right: calc(50vw + 0.5em);
       }
@@ -160,16 +164,20 @@ header {
         justify-content: space-between;
         width: 26.5em;
         margin: 0 auto;
+
         .trapezoid__icon {
           width: 6em;
+
           img {
             width: 4em;
           }
+
           &:nth-child(2) img {
             width: 5em;
           }
         }
       }
+
       .trapezoid__name {
         right: calc(50vw + 5.5em);
       }
@@ -182,12 +190,14 @@ header {
         justify-content: space-between;
         width: 31em;
         margin: 0 auto;
+
         .trapezoid__icon {
           img {
             max-height: 6em;
           }
         }
       }
+
       .trapezoid__name {
         right: calc(50vw + 10.5em);
       }
@@ -200,13 +210,16 @@ header {
         justify-content: space-between;
         margin: 0 auto;
         width: 40em;
+
         .trapezoid__icon {
           width: 10em;
+
           img {
             max-height: 6em;
           }
         }
       }
+
       .trapezoid__name {
         right: calc(50vw + 15.5em);
       }
@@ -218,17 +231,21 @@ header {
   body {
     background-size: 130%;
   }
+
   .triangle {
     min-height: 74em;
     background-size: 70em 74em;
+
     .trapezoid {
       height: 14.9em;
 
       .trapezoid__name {
         bottom: 6em;
+
         img {
           width: 14em;
         }
+
         p {
           font-size: 1.2em;
         }
@@ -236,10 +253,12 @@ header {
 
       .trapezoid__content {
         padding: 2em;
+
         span {
           font-size: 1.3em;
           line-height: 1.3em;
         }
+
         .trapezoid__icon {
           min-height: 7em;
         }
@@ -251,55 +270,69 @@ header {
           background-position-y: 7.5em;
         }
       }
+
       &.orange {
         .trapezoid__content {
           background-size: 17em;
         }
+
         .trapezoid__name {
           right: calc(50vw + 2.5em);
         }
       }
+
       &.yellow {
         .trapezoid__content {
           width: 36.5em;
+
           .trapezoid__icon {
             width: 8em;
+
             img {
               width: 6em;
               max-height: 8em;
             }
+
             &:nth-child(2) img {
               width: 7em;
             }
           }
         }
+
         .trapezoid__name {
           right: calc(50vw + 9.5em);
         }
       }
+
       &.green {
         .trapezoid__content {
           width: 47em;
+
           .trapezoid__icon {
             img {
               max-height: 8.5em;
             }
           }
         }
+
         .trapezoid__name {
           right: calc(50vw + 16.5em);
         }
       }
+
       &.blue {
         .trapezoid__content {
           width: 55em;
+
           .trapezoid__icon {
             width: 12em;
+
             img {
               max-height: 8.5em;
             }
           }
         }
+
         .trapezoid__name {
           right: calc(50vw + 23.5em);
         }
@@ -312,15 +345,18 @@ header {
   .triangle {
     min-height: 110em;
     background-size: 105em 108em;
+
     .trapezoid {
       height: 21.55em;
 
       .trapezoid__name {
         bottom: 8em;
         transform: rotate(-64deg);
+
         img {
           width: 21em;
         }
+
         p {
           font-size: 2em;
         }
@@ -328,13 +364,16 @@ header {
 
       .trapezoid__content {
         padding: 2.3em;
+
         span {
           font-size: 1.9em;
         }
+
         .trapezoid__icon {
           min-height: 7em;
           line-height: 1.2em;
         }
+
         .trapezoid__icon {
           min-height: 7em;
         }
@@ -345,60 +384,75 @@ header {
           background-size: 10em;
           background-position-y: 10.5em;
         }
+
         .trapezoid__name {
           right: calc(50vw + (-2.5em));
         }
       }
+
       &.orange {
         .trapezoid__content {
           background-size: 26em;
           background-position-y: 2.7em;
         }
+
         .trapezoid__name {
           right: calc(50vw + 7.4em);
         }
       }
+
       &.yellow {
         .trapezoid__content {
           width: 53.5em;
+
           .trapezoid__icon {
             width: 12em;
+
             img {
               width: 10em;
               max-height: 11em;
             }
+
             &:nth-child(2) img {
               width: 11em;
             }
           }
         }
+
         .trapezoid__name {
           right: calc(50vw + 18em);
         }
       }
+
       &.green {
         .trapezoid__content {
           width: 67em;
+
           .trapezoid__icon {
             img {
               max-height: 13em;
             }
           }
         }
+
         .trapezoid__name {
           right: calc(50vw + 28.5em);
         }
       }
+
       &.blue {
         .trapezoid__content {
           width: 87em;
+
           .trapezoid__icon {
             width: 17em;
+
             img {
               max-height: 13.5em;
             }
           }
         }
+
         .trapezoid__name {
           right: calc(50vw + 39em);
         }
@@ -414,9 +468,11 @@ header {
         transform: rotate(0deg);
         position: unset;
         margin-top: -1em;
+
         img {
           display: none;
         }
+
         p {
           width: fit-content;
           background-color: #fff;
@@ -433,16 +489,20 @@ header {
   body {
     padding: 80px 0px;
   }
+
   .triangle {
     min-height: unset;
     background-size: 40em 80em;
+
     .trapezoid {
       height: 16em;
+
       .trapezoid__content {
         span {
           font-size: 14.7px;
         }
       }
+
       &.orange {
         .trapezoid__content {
           background-position: center 9.5em;
@@ -450,22 +510,26 @@ header {
           padding-top: 5em;
         }
       }
+
       &.yellow {
         .trapezoid__content {
           justify-content: center;
           flex-wrap: wrap;
           width: 18em;
+
           .trapezoid__icon {
             width: 8em;
           }
         }
       }
+
       &.green,
       &.blue {
         .trapezoid__content {
           justify-content: space-around;
           flex-wrap: wrap;
           width: 22em;
+
           .trapezoid__icon img {
             max-height: 4.5em;
           }
@@ -473,8 +537,10 @@ header {
       }
     }
   }
+
   .triangle .trapezoid.green .trapezoid__content .trapezoid__icon:nth-child(2) {
     order: 1;
+    width: 13em;
   }
 }
 
@@ -484,8 +550,31 @@ header {
       .heading__title {
         font-size: 1.5em;
       }
-      .heading__author, .heading__description{
-          font-size: .8em;
+
+      .heading__author,
+      .heading__description {
+        font-size: .8em;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 350px) {
+  .triangle {
+    .trapezoid {
+      .trapezoid__content {
+        padding: 1em 0;
+      }
+
+      &.green,
+      &.blue {
+        .trapezoid__content {
+          width: 100%;
+
+          .trapezoid__icon {
+            width: 7em;
+          }
+        }
       }
     }
   }
@@ -507,8 +596,7 @@ header {
   src: url("../fonts/Mark Simonson - Proxima Nova Extrabold.eot");
   src: local("☺"),
     url("../fonts/Mark Simonson - Proxima Nova Extrabold.woff") format("woff"),
-    url("../fonts/Mark Simonson - Proxima Nova Extrabold.ttf")
-      format("truetype"),
+    url("../fonts/Mark Simonson - Proxima Nova Extrabold.ttf") format("truetype"),
     url("../fonts/Mark Simonson - Proxima Nova Extrabold.svg") format("svg");
   font-weight: normal;
   font-style: normal;

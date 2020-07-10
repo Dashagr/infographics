@@ -466,7 +466,6 @@ header .heading .heading__description {
 }
 
 .triangle .trapezoid .trapezoid__name p {
-  display: inline;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -913,6 +912,7 @@ header .heading .heading__description {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+    width: 13em;
   }
 }
 
@@ -924,6 +924,22 @@ header .heading .heading__description {
   header .heading .heading__author,
   header .heading .heading__description {
     font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .triangle .trapezoid .trapezoid__content {
+    padding: 1em 0;
+  }
+
+  .triangle .trapezoid.green .trapezoid__content,
+  .triangle .trapezoid.blue .trapezoid__content {
+    width: 100%;
+  }
+
+  .triangle .trapezoid.green .trapezoid__content .trapezoid__icon,
+  .triangle .trapezoid.blue .trapezoid__content .trapezoid__icon {
+    width: 7em;
   }
 }
 
