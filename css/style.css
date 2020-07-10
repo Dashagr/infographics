@@ -1,0 +1,952 @@
+@charset "UTF-8";
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  background-image: url("../img/star.svg");
+  background-attachment: fixed;
+  background-position-x: center;
+  background-size: 200%;
+  background-position-y: -7rem;
+  background-repeat: no-repeat;
+  background-color: #dfdad4;
+  padding: 80px 70px 100px 70px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+header .heading {
+  color: #4f5064;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header .heading p {
+  margin: 0;
+}
+
+header .heading .heading__author {
+  font-family: "Proxima Nova Extrabld";
+  font-size: 30px;
+  letter-spacing: 2.4px;
+  -webkit-animation: loading 1.75s linear 1;
+  animation: loading 1.75s linear 1;
+}
+
+header .heading .heading__title {
+  font-family: "Proxima Nova Black";
+  font-size: 50px;
+  letter-spacing: 7px;
+  margin: 28px auto;
+  -webkit-animation: loading 1.75s linear 2;
+  animation: loading 1.75s linear 2;
+}
+
+header .heading .heading__description {
+  font-family: "Proxima Nova Extrabld";
+  font-size: 23px;
+  letter-spacing: 1.84px;
+  -webkit-animation: loading 1.75s linear 1;
+  animation: loading 1.75s linear 1;
+}
+
+@-webkit-keyframes loading {
+  50% {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+
+  0%,
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes loading {
+  50% {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+
+  0%,
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+.triangle {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 995 867' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D .cls-2 %7B isolation: isolate; %7D .cls-3 %7B clip-path: url(%23clip-path); %7D %3C/style%3E%3CclipPath id='clip-path' transform='translate(-0.01 -0.01)'%3E%3Cpolygon class='cls-1' points='497.51 0 0 867.02 995.02 867.02 497.51 0'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Group_2' data-name='Group 2'%3E%3Cg id='triangle' class='cls-2'%3E%3Cg class='cls-3'%3E%3Cimage id='Shape_1_Rectangle_1_Rectangle_1_copy_Rectangle_1_copy_2_Rectangle_1_copy_3_Rectangle_1_copy_4_Изображение' data-name='Shape 1 + Rectangle 1 + Rectangle 1 copy + Rectangle 1 copy 2 + Rectangle 1 copy 3 + Rectangle 1 copy 4 Изображение' width='995' height='867' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+MAAANjCAYAAADBNMsIAAAACXBIWXMAAAsSAAALEgHS3X78AAAVGUlEQVR4Xu3asY0UURRFwRk0FsLHxcPsJDAhAdLYODYFTAgATILoNvEIAmHSJLDSQzA62+xU2TeB898/r+u6nwAAAIDMs2kAAAAAXJcYBwAAgJgYBwAAgNhlGgDw+JZlmSYAp9PpdNq2bZoAcAAu4wAAABAT4wAAABDzTR3gP/Pj7u00AW7Mi/sv0wSAg3EZBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgNh5Xdd9GgE8ZFmWaQIAT9q2bdME4EEu4wAAABAT4wAAABC7TAOAP/Hz/tU0AYAn4fnd92kCMHIZBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgJgYBwAAgNh5Xdd9GsGRLMsyTQAAuDHbtk0TOBSXcQAAAIiJcQAAAIhdpgEc2jfvSQAAN+v1r2kBh6VkAAAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAICbGAQAAIHZe13WfRvydZVmmCQAAwCFt2zZN+Acu4wAAABAT4wAAABC7TAOu4+PXd9MEAADgUb1/83macCUu4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABAT4wAAABA77/u+TyMAAADgelzGAQAAICbGAQAAIHZ5+enDtAEAAACuyGUcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYmIcAAAAYud93/dpBAAAAFyPyzgAAADExDgAAADEfgM2ITTdDGm5lQAAAABJRU5ErkJggg=='/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  width: 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 54em;
+  background-size: 50em 54em;
+}
+
+.triangle .trapezoid {
+  height: 10.7em;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.triangle .trapezoid .trapezoid__name {
+  color: #51423d;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  -webkit-transform: rotate(-65deg);
+  -ms-transform: rotate(-65deg);
+  transform: rotate(-65deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 4em;
+}
+
+.triangle .trapezoid .trapezoid__name img {
+  width: 10em;
+}
+
+.triangle .trapezoid .trapezoid__name p {
+  display: inline;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.triangle .trapezoid .trapezoid__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  padding: 1em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.triangle .trapezoid .trapezoid__content span {
+  font-family: "Proxima Nova";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.triangle .trapezoid .trapezoid__content .trapezoid__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.triangle .trapezoid .trapezoid__content .trapezoid__icon img {
+  margin-bottom: 12px;
+  max-height: 4.75em;
+}
+
+.triangle .trapezoid.red .trapezoid__content {
+  color: #603620;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-image: url("../img/SVG/heart.svg");
+  background-position: center;
+  background-size: 5em;
+  background-position-y: 5.5em;
+}
+
+.triangle .trapezoid.red .trapezoid__name {
+  right: calc(50vw + (-4em));
+}
+
+.triangle .trapezoid.orange .trapezoid__content {
+  color: #8e4222;
+  background-image: url("../img/SVG/audience.svg");
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-position: center 1.5em;
+  background-size: 13em;
+}
+
+.triangle .trapezoid.orange .trapezoid__name {
+  right: calc(50vw + 0.5em);
+}
+
+.triangle .trapezoid.yellow .trapezoid__content {
+  color: #765e38;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 26.5em;
+  margin: 0 auto;
+}
+
+.triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon {
+  width: 6em;
+}
+
+.triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon img {
+  width: 4em;
+}
+
+.triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon:nth-child(2) img {
+  width: 5em;
+}
+
+.triangle .trapezoid.yellow .trapezoid__name {
+  right: calc(50vw + 5.5em);
+}
+
+.triangle .trapezoid.green .trapezoid__content {
+  color: #5a692a;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 31em;
+  margin: 0 auto;
+}
+
+.triangle .trapezoid.green .trapezoid__content .trapezoid__icon img {
+  max-height: 6em;
+}
+
+.triangle .trapezoid.green .trapezoid__name {
+  right: calc(50vw + 10.5em);
+}
+
+.triangle .trapezoid.blue .trapezoid__content {
+  color: #06645e;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 40em;
+}
+
+.triangle .trapezoid.blue .trapezoid__content .trapezoid__icon {
+  width: 10em;
+}
+
+.triangle .trapezoid.blue .trapezoid__content .trapezoid__icon img {
+  max-height: 6em;
+}
+
+.triangle .trapezoid.blue .trapezoid__name {
+  right: calc(50vw + 15.5em);
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    background-size: 130%;
+  }
+
+  .triangle {
+    min-height: 74em;
+    background-size: 70em 74em;
+  }
+
+  .triangle .trapezoid {
+    height: 14.9em;
+  }
+
+  .triangle .trapezoid .trapezoid__name {
+    bottom: 6em;
+  }
+
+  .triangle .trapezoid .trapezoid__name img {
+    width: 14em;
+  }
+
+  .triangle .trapezoid .trapezoid__name p {
+    font-size: 1.2em;
+  }
+
+  .triangle .trapezoid .trapezoid__content {
+    padding: 2em;
+  }
+
+  .triangle .trapezoid .trapezoid__content span {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+
+  .triangle .trapezoid .trapezoid__content .trapezoid__icon {
+    min-height: 7em;
+  }
+
+  .triangle .trapezoid.red .trapezoid__content {
+    background-size: 7em;
+    background-position-y: 7.5em;
+  }
+
+  .triangle .trapezoid.orange .trapezoid__content {
+    background-size: 17em;
+  }
+
+  .triangle .trapezoid.orange .trapezoid__name {
+    right: calc(50vw + 2.5em);
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content {
+    width: 36.5em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon {
+    width: 8em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon img {
+    width: 6em;
+    max-height: 8em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon:nth-child(2) img {
+    width: 7em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__name {
+    right: calc(50vw + 9.5em);
+  }
+
+  .triangle .trapezoid.green .trapezoid__content {
+    width: 47em;
+  }
+
+  .triangle .trapezoid.green .trapezoid__content .trapezoid__icon img {
+    max-height: 8.5em;
+  }
+
+  .triangle .trapezoid.green .trapezoid__name {
+    right: calc(50vw + 16.5em);
+  }
+
+  .triangle .trapezoid.blue .trapezoid__content {
+    width: 55em;
+  }
+
+  .triangle .trapezoid.blue .trapezoid__content .trapezoid__icon {
+    width: 12em;
+  }
+
+  .triangle .trapezoid.blue .trapezoid__content .trapezoid__icon img {
+    max-height: 8.5em;
+  }
+
+  .triangle .trapezoid.blue .trapezoid__name {
+    right: calc(50vw + 23.5em);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .triangle {
+    min-height: 110em;
+    background-size: 105em 108em;
+  }
+
+  .triangle .trapezoid {
+    height: 21.55em;
+  }
+
+  .triangle .trapezoid .trapezoid__name {
+    bottom: 8em;
+    -webkit-transform: rotate(-64deg);
+    -ms-transform: rotate(-64deg);
+    transform: rotate(-64deg);
+  }
+
+  .triangle .trapezoid .trapezoid__name img {
+    width: 21em;
+  }
+
+  .triangle .trapezoid .trapezoid__name p {
+    font-size: 2em;
+  }
+
+  .triangle .trapezoid .trapezoid__content {
+    padding: 2.3em;
+  }
+
+  .triangle .trapezoid .trapezoid__content span {
+    font-size: 1.9em;
+  }
+
+  .triangle .trapezoid .trapezoid__content .trapezoid__icon {
+    min-height: 7em;
+    line-height: 1.2em;
+  }
+
+  .triangle .trapezoid .trapezoid__content .trapezoid__icon {
+    min-height: 7em;
+  }
+
+  .triangle .trapezoid.red .trapezoid__content {
+    background-size: 10em;
+    background-position-y: 10.5em;
+  }
+
+  .triangle .trapezoid.red .trapezoid__name {
+    right: calc(50vw + (-2.5em));
+  }
+
+  .triangle .trapezoid.orange .trapezoid__content {
+    background-size: 26em;
+    background-position-y: 2.7em;
+  }
+
+  .triangle .trapezoid.orange .trapezoid__name {
+    right: calc(50vw + 7.4em);
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content {
+    width: 53.5em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon {
+    width: 12em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon img {
+    width: 10em;
+    max-height: 11em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon:nth-child(2) img {
+    width: 11em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__name {
+    right: calc(50vw + 18em);
+  }
+
+  .triangle .trapezoid.green .trapezoid__content {
+    width: 67em;
+  }
+
+  .triangle .trapezoid.green .trapezoid__content .trapezoid__icon img {
+    max-height: 13em;
+  }
+
+  .triangle .trapezoid.green .trapezoid__name {
+    right: calc(50vw + 28.5em);
+  }
+
+  .triangle .trapezoid.blue .trapezoid__content {
+    width: 87em;
+  }
+
+  .triangle .trapezoid.blue .trapezoid__content .trapezoid__icon {
+    width: 17em;
+  }
+
+  .triangle .trapezoid.blue .trapezoid__content .trapezoid__icon img {
+    max-height: 13.5em;
+  }
+
+  .triangle .trapezoid.blue .trapezoid__name {
+    right: calc(50vw + 39em);
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .triangle .trapezoid .trapezoid__name {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: unset;
+    margin-top: -1em;
+  }
+
+  .triangle .trapezoid .trapezoid__name img {
+    display: none;
+  }
+
+  .triangle .trapezoid .trapezoid__name p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 0.5em 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 80px 0px;
+  }
+
+  .triangle {
+    min-height: unset;
+    background-size: 40em 80em;
+  }
+
+  .triangle .trapezoid {
+    height: 16em;
+  }
+
+  .triangle .trapezoid .trapezoid__content span {
+    font-size: 14.7px;
+  }
+
+  .triangle .trapezoid.orange .trapezoid__content {
+    background-position: center 9.5em;
+    -webkit-box-pack: normal;
+    -ms-flex-pack: normal;
+    justify-content: normal;
+    padding-top: 5em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 18em;
+  }
+
+  .triangle .trapezoid.yellow .trapezoid__content .trapezoid__icon {
+    width: 8em;
+  }
+
+  .triangle .trapezoid.green .trapezoid__content,
+  .triangle .trapezoid.blue .trapezoid__content {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 22em;
+  }
+
+  .triangle .trapezoid.green .trapezoid__content .trapezoid__icon img,
+  .triangle .trapezoid.blue .trapezoid__content .trapezoid__icon img {
+    max-height: 4.5em;
+  }
+
+  .triangle .trapezoid.green .trapezoid__content .trapezoid__icon:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header .heading .heading__title {
+    font-size: 1.5em;
+  }
+
+  header .heading .heading__author,
+  header .heading .heading__description {
+    font-size: 0.8em;
+  }
+}
+
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("../fonts/ Simonson - Proxima Nova Black.eot'");
+  src: local("☺"), url("../../fonts/Mark Simonson - Proxima Nova Black.woff") format("woff"), url("../fonts/Mark Simonson - Proxima Nova Black.ttf") format("truetype"), url("../fonts/Mark Simonson - Proxima Nova Black.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Extrabld";
+  src: url("../fonts/Mark Simonson - Proxima Nova Extrabold.eot");
+  src: local("☺"), url("../fonts/Mark Simonson - Proxima Nova Extrabold.woff") format("woff"), url("../fonts/Mark Simonson - Proxima Nova Extrabold.ttf") format("truetype"), url("../fonts/Mark Simonson - Proxima Nova Extrabold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Mark Simonson - Proxima Nova Regular.eot");
+  src: local("☺"), url("../fonts/Mark Simonson - Proxima Nova Regular.woff") format("woff"), url("../fonts/Mark Simonson - Proxima Nova Regular.ttf") format("truetype"), url("../fonts/Mark Simonson - Proxima Nova Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
